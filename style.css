@@ -7,6 +7,8 @@
 
 /* MOBILE NAV MENU */
 /* LIKES/DISLIKE BUTTON */
+/* School Circle Animation */
+/* Some type of background animation??? */
 
 /* Navigation Bar Section (Start) */
 
@@ -842,6 +844,12 @@
         transform: translateX(-50%);
     }
 
+    .LikeBox1:hover, .LikeBox2:hover, .LikeBox3:hover,
+.DislikeBox1:hover, .DislikeBox2:hover, .DislikeBox3:hover,
+.HobbieBox1:hover, .HobbieBox2:hover, .HobbieBox3:hover {
+    transform: translateX(-50%);
+}
+
 }
 
 /* MOBILE/ANIMATIONS (End) */
@@ -1279,6 +1287,7 @@
     background-color: white;
     transform: translateY(75%);
     margin-right: 25%;
+    color: green;
 }
 
 .Club2 {
@@ -1287,6 +1296,7 @@
     border-radius: 50%;
     background-color: white;
     transform: translateY(75%);
+    color: #FFCC00;
 }
 
 .Club1 h2, .Club2 h2 {
@@ -1307,6 +1317,26 @@
     white-space: nowrap; /* Prevent line breaks */
     overflow: auto; /* Enable horizontal scrolling when necessary */
     display: inline-block; /* Match the width to the text content */
+}
+
+.Skill:nth-child(1) {
+    color: red;
+}
+
+.Skill:nth-child(2) {
+    color: #f06529;
+}
+
+.Skill:nth-child(3) {
+    color: #2965f1;
+}
+
+.Skill:nth-child(4) {
+    color: #ffde57;
+}
+
+.Skill:nth-child(5) {
+    color: #1D6F42;
 }
 
 /* RESUME/SOCIAL BUTTONS (Start) */
@@ -1386,6 +1416,8 @@
 
 /* RESUME/SOCIAL BUTTONS (End) */
 
+/* PAGE SHRINK RESPONSIVENESS (Start) */
+
 @media screen and (max-width: 1250px) {
 
     .EducationPage {
@@ -1463,6 +1495,11 @@
 
 }
 
+/* PAGE SHRINK RESPONSIVENESS (End) */
+
+
+/* MOBILE RESPONSIVENESS (Start) */
+
 @media screen and (max-width: 650px) {
     .SkillsBar {
         height: 200px;
@@ -1520,6 +1557,8 @@
         top: 2675px;
         width: 450px;
     }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1540,3 +1579,5 @@
     }
     
 }
+
+/* MOBILE RESPONSIVENESS (End) */
