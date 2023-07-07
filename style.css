@@ -5,9 +5,52 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* ANIMATIONS (Start) */
+
+@keyframes changeBorderRadiusHS {
+    0% {
+      border-radius: 35% 65% 84% 16% / 64% 24% 76% 36%;
+    }
+    50% {
+      border-radius: 82% 18% 62% 38% / 34% 24% 76% 66%;
+    }
+    100% {
+      border-radius: 21% 79% 19% 81% / 64% 37% 63% 36%;
+    }
+  }
+
+@keyframes changeBorderRadiusCollege {
+    0% {
+      border-radius: 80% 20% 57% 43% / 86% 37% 63% 14%;
+    }
+    50% {
+      border-radius: 45% 55% 51% 49% / 26% 46% 54% 74%;
+    }
+    100% {
+      border-radius: 71% 29% 17% 83% / 74% 21% 79% 26%;
+    }
+}
+
+@keyframes rotateImage {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+  
+
+/* ANIMATIONS (End) */
+
 /* MOBILE NAV MENU */
+/* Scroll when nav bar is clicked */
 /* LIKES/DISLIKE BUTTON */
-/* School Circle Animation */
+/* Make Relevent Courses Cooler */
+/* Arrows to Skills */
+/* Spin Clubs */
+/* Contact Page */
+/* Project Page */
 /* Some type of background animation??? */
 
 /* Navigation Bar Section (Start) */
@@ -134,19 +177,20 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -500%;
         opacity: 0;
-        transition: all 0.6s ease;
         height: 50vh;
         z-index: -1;
-
+        transition: all 0.6s ease;
     }
 
     .navbar__menu.active {
-        background: red;
+        background: #141414;
         top: 100% !important;
         opacity: 1 !important;
-        transition: all 0.5s ease;
+        transition: all 0.6s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -323,7 +367,7 @@
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
-        height: 1000px;
+        height: 1050px;
     }
 
     .main__content {
@@ -743,14 +787,20 @@
     top: 62.5%;
 }
 
-/* HOBBIES (End) */
-
-/* MOBILE/ANIMATIONS (Start) */
-
 .LikeBox1:hover, .LikeBox2:hover, .LikeBox3:hover,
 .DislikeBox1:hover, .DislikeBox2:hover, .DislikeBox3:hover,
 .HobbieBox1:hover, .HobbieBox2:hover, .HobbieBox3:hover {
     transform: scale(1.1);
+}
+
+/* HOBBIES (End) */
+
+/* MOBILE/ANIMATIONS (Start) */
+
+@media screen and (max-width: 760px) {
+    .Header {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -892,6 +942,8 @@
     display: flex;
     justify-content: center;
     background-color: #113625;
+    border-color: #113625;
+    animation: changeBorderRadiusHS 3s linear infinite alternate;
 }
 
 .HSCircle h1 {
@@ -960,6 +1012,7 @@
     display: flex;
     justify-content: center;
     background-color: white;
+    animation: changeBorderRadiusCollege 3s linear infinite alternate;
 }
 
 .ColCircle h1 {
@@ -1303,8 +1356,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 50px;
+    animation: rotateImage 3s linear infinite;
+
 }
 
 .Club1 p, .Club2 p {
