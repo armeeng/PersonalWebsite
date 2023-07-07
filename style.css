@@ -342,6 +342,10 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    #navbar__logo {
+        left: 0px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -383,8 +387,8 @@
 /* THIS IS FOR THE BLUE STUFF IN ALL THE BOXES (End) */
 
 .AboutMePage {
-    height: 1650px;
-    background-color: #131313;
+    height: 1500px;
+    background-color: #141414;
     position: relative;
 }
 
@@ -393,7 +397,7 @@
     font-weight: 900;
     position: absolute;
     text-align: center;
-    top: 60px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 89px;
@@ -408,18 +412,21 @@
 /* LIKES (Start) */
 
 .Likes {
-    color: white;
+
     position: absolute;
     left: 22.5%;
     top: 400px;
     font-weight: 900;
     font-size: 40px;
     background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    display: inline-block;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    overflow: hidden; /* Hide any overflow */
+    width: 97px;
 }
 
 .LikeBox1 {
@@ -530,6 +537,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    width: 144px;
 }
 
 .DislikeBox1 {
@@ -735,83 +743,6 @@
 
 /* HOBBIES (End) */
 
-/* RESUME/SOCIAL BUTTONS (Start) */
-
-.Resume {
-    height: 50px;
-    width: 110px;
-    color: black;
-    background-color: white;
-    font-weight: 900;
-    border: solid;
-    border-radius: 35px;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(50%);
-}
-
-.Resume:hover {
-    background-color: #131313;
-    color: white;
-    transition: all 0.6s ease;
-}
-
-.ContactMe {
-    height: 50px;
-    width: 110px;
-    color: black;
-    background-color: white;
-    border: solid;
-    border-radius: 35px;
-    font-weight: 900;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(50%);
-}
-
-.ContactMe:hover {
-    background-color: #131313;
-    color: white;
-    transition: all 0.6s ease;
-}
-
-.instagram, .linkedin {
-    color: white;
-    font-size: 60px;
-    transform: translateY(16%);
-}
-
-.instagram:hover {
-    color: #E1306C;
-    transition: all 0.6s ease;
-}
-
-.linkedin:hover {
-    color: #0072b1;
-    transition: all 0.6s ease;
-}
-
-.SocialContact {
-    height: 100px;
-    width: 400px;
-    position: absolute;
-    left: 50%;
-    top: 1515px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-}
-
-/* RESUME/SOCIAL BUTTONS (End) */
-
 /* MOBILE/ANIMATIONS (Start) */
 
 .LikeBox1:hover, .LikeBox2:hover, .LikeBox3:hover,
@@ -860,8 +791,55 @@
         transform: translate(-50%, -230%);
     }
 
-    .SocialContact {
-        margin-top: 20px;
+    .AboutMePage {
+        height: 1950px;
+    }
+
+    .LikeBox2 {
+        margin-top: 40px;
+    }
+
+    .LikeBox3 {
+        margin-top: 80px;
+    }
+
+    .Dislikes {
+        margin-top: 120px;
+    }
+
+    .DislikeBox1 {
+        margin-top: 187.5px;
+    }
+
+    .DislikeBox2 {
+        margin-top: 227.5px;
+    }
+
+    .DislikeBox3 {
+        margin-top: 267.5px;
+    }
+
+    .Hobbies {
+        margin-top: 260px;
+    }
+
+    .HobbieBox1 {
+        margin-top: 367.5px;
+    }
+
+    .HobbieBox2 {
+        margin-top: 407.5px;
+    }
+
+    .HobbieBox3 {
+        margin-top: 447.5px;
+    }
+
+    .LikeBox1, .LikeBox2, .LikeBox3, 
+    .DislikeBox1, .DislikeBox2, .DislikeBox3,
+    .HobbieBox1, .HobbieBox2, .HobbieBox3 {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }
@@ -872,7 +850,7 @@
 /* EDUCATION PAGE (Start) */
 
 .EducationPage {
-    height: 2300px;
+    height: 2220px;
     background-color: #141414;
     position: relative;
 }
@@ -881,7 +859,7 @@
     font-weight: 900;
     position: absolute;
     text-align: center;
-    top: 60px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 89px;
@@ -891,6 +869,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    width: 112px;
 }
 
 .HSCircle {
@@ -916,6 +895,20 @@
     transform: translateX(50%);
     top: 230px;
     background: linear-gradient(to top, #bda16e 0%, #113625 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.HSCircle h2 {
+    position: absolute;
+    top: 208px;
+    left: 25.3%;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -977,7 +970,21 @@
     -moz-text-fill-color: transparent;
 }
 
-.ColCircle h2 {
+.yearOSU {
+    position: absolute;
+    top: 208px;
+    left: 24.5%;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.major {
     white-space: nowrap; /* Prevent line breaks */
     overflow: auto; /* Enable horizontal scrolling when necessary */
     display: inline-block; /* Match the width to the text content */
@@ -1207,11 +1214,13 @@
     padding-right: 5%;
 }
 
-.SkillsBar h1 {
+.SkillHead {
     color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 1500px;
+    z-index: 16;
 }
 
 .Skill {
@@ -1300,10 +1309,91 @@
     display: inline-block; /* Match the width to the text content */
 }
 
+/* RESUME/SOCIAL BUTTONS (Start) */
+
+.SocialContact {
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 2115px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Resume {
+    height: 50px;
+    width: 110px;
+    color: black;
+    background-color: white;
+    font-weight: 900;
+    border: solid;
+    border-radius: 35px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+}
+
+.Resume:hover {
+    background-color: #131313;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+.ContactMe {
+    height: 50px;
+    width: 110px;
+    color: black;
+    background-color: white;
+    border: solid;
+    border-radius: 35px;
+    font-weight: 900;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+}
+
+.ContactMe:hover {
+    background-color: #131313;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+.instagram, .linkedin {
+    color: white;
+    font-size: 60px;
+    transform: translateY(16%);
+}
+
+.instagram:hover {
+    color: #E1306C;
+    transition: all 0.6s ease;
+}
+
+.linkedin:hover {
+    color: #0072b1;
+    transition: all 0.6s ease;
+}
+
+/* RESUME/SOCIAL BUTTONS (End) */
+
 @media screen and (max-width: 1250px) {
 
     .EducationPage {
-        height: 5000px;
+        height: 2850px;
+    }
+
+    .Header2 {
+        top: 13px;
     }
 
     .HSCircle {
@@ -1357,13 +1447,25 @@
         margin-top: 750px;
     }
 
+    .SkillHead {
+        color: white;
+        position: absolute;
+        top: 2160px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 16;
+    }
+
+    .SocialContact {
+        top: 2750px;
+    }
+
 
 }
 
 @media screen and (max-width: 650px) {
     .SkillsBar {
         height: 200px;
-        background-color: #141414;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -1388,13 +1490,53 @@
         height: 0;
     }
 
-    .SkillsBar h1 {
-        position: sticky;
+    .SkillHead {
+        color: white;
+        position: absolute;
+        top: 2160px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #141414;
-        z-index: 1;
-        background: transparent;
+        z-index: 16;
+    }
+
+    .Resume, .ContactMe {
+        font-size: 12.5px;
+        height: 40px;
+        width: 100px;
+        transform: translateY(75%);
+    }
+
+    .SocialContact {
+        margin-top: 65px;
+        width: 350px;
+    }
+
+    .instagram, .linkedin {
+        font-size: 40px;
+        transform: translateY(50%);
+    }
+    
+    .SocialContact {
+        top: 2675px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .HSCircle h1, .ColCircle h1 {
+        font-size: 25px;
+    }
+
+    .ColCircle h1 {
+        width: 302px;
+    }
+
+    .AcSocClub, .SkillHead {
+        font-size: 12.5px;
+    }
+
+    .SocialContact {
+        width: 375px;
     }
     
 }
