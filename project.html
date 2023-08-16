@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+
+    <link rel="stylesheet" href="project.css">
+
+    <script src="https://kit.fontawesome.com/44c3d7ec8c.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+
+        <!-- Navigation Bar Section (Start) -->
+
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fa-regular fa-face-smile"></i></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links"> Return Home </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="contact.php" class="button"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Navigation Bar Section (End) -->
+
+        <div class="ProjectPage">
+
+            <div class="wrapper">
+
+                <div class="accordion">
+
+                    <div class="accordion-panel">
+                        <h2 id="panel1-heading">
+                            <button
+                            class="accordion-trigger"
+                            aria-controls="panel1-content"
+                            aria-expanded="true"
+                            >
+                                <span class="accordion-title" id="panel1-title">College Basketball Statistical Analysis</span>
+                                <svg aria-hidden="true" class="accordion-icon">
+                                    <use xlink:href="#basketball"></use>
+                                </svg>
+                            </button>
+                        </h2>
+
+                        <div 
+
+                        class="accordion-content" 
+                        id="panel1-content"
+                        aria-labelledby="panel1-heading"
+                        aria-hidden='false'
+                        role="region"
+                        >
+
+                        <div class="accordion-labels">
+                            <h3 class="label1" id="label">Python</h3>
+                            <h3 class="label2" id="label">Data Analysis</h3>
+                            <h3 class="label3" id="label">Work-In Progress</h3>
+                        </div>
+
+                        
+                        
+                            <button class="MoreInfoButton"><h3>More Info</h3></button>
+                            <dialog class="MoreInfo">
+                                <h1>Description</h1>
+                                <ul class="Modal">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="zero">
+                                        <label for="zero">Creation</label>
+                                        <div class="content">
+                                            <p>
+                                                As I embarked on this project, my programming knowledge was quite limited, and it required a significant amount of learning before I could even start writing the program. I leaned on external resources like Google, YouTube, and ChatGPT for guidance. As the project evolved, my understanding expanded, and I gained valuable insights into various programming concepts and techniques. The gradual progress of the project allowed me to delve deeper into coding practices, problem-solving strategies, and effective development approaches. Each step of the journey was an opportunity to absorb new knowledge and refine my newly acquired skills.
+                                                <br>
+                                                <br>
+                                                To view all the code, statisitcal records, and how accurate the predictions were for the 2022-2023 season...
+                                                <br>
+                                                <br>
+                                                <div class="SourceCode">
+                                                <div class="socialBackground0">
+                                                    <a href="/" target="_blank"><div class="github"><i class="fa-brands fa-github"></i></div></a>
+                                                </div>
+                                                <a href="/" class="flowchart">Flowchart (Coming Soon)</a>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="first">
+                                        <label for="first">Libraries</label>
+                                        <div class="content">
+                                            <p>This code is written entirely in python, and it starts by importing necessary
+                                                libraries, such as requests, BeautifulSoup, pandas, os, re, math, MinMaxScaler,
+                                                csv, and openpyxl. These libraries are used for web scraping, data manipulation
+                                                and analysis, normalization, and file handling.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="two">
+                                        <label for="two">Web Scraping</label>
+                                        <div class="content">
+                                            <p>The code defines three lists of URLs, each containing URLs to scrape data from.
+                                                It then uses the requests and BeautifulSoup libraries to fetch data from the specified URLs.
+                                                The data is scraped from web pages containing NCAA basketball statistics and placed into a pandas data frame.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="three">
+                                        <label for="three">Data Preprocessing</label>
+                                        <div class="content">
+                                            <p>After web scraping, the code preprocesses the scraped data using pandas.
+                                                It performs various cleaning tasks to remove unwanted characters and replaces missing values with appropriate defaults.
+                                                Additionally, it converts certain columns to numerical values for analysis.
+                                                The data is then normalized using MinMaxScaler from sklearn.preprocessing to bring all the metrics on a common scale.
+                                                It also defines helper functions for handling errors when accessing values from the dataframes.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="four">
+                                        <label for="four">Data Analysis and Comparison</label>
+                                        <div class="content">
+                                            <p>To compare two NCAA basketball teams, the code iterates through a schedule that
+                                                contains all the teams that are playing, and creates 3 data frames for each team.
+                                                These dataframes contain the performance metrics for each team, and the code subtracts the
+                                                corresponding values between the two opposing teams to identify performance differences which are appended into 3 new data frames.
+                                                These performance differences can be used to help predict the outcome of a single game, but it
+                                                still needs quite a bit of work in order to be more accurate and reliable.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="five">
+                                        <label for="five">Summary Statistics and Excel Output</label>
+                                        <div class="content">
+                                            <p>The code then aims to summarize the differences in performance metrics between the two teams into a singular number.
+                                                This is done by summing the columns of the comparison dataframes to see which team is statistically weaker. This number, along with
+                                                the corresponding teams are appended into an excel sheet to keep track of all the games and predictions.
+                                                However the main purpose of this code is to try and see if there are any statistics that should carry more weight than other statistics (see 'Tracking Statistics After Each Game')
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="six">
+                                        <label for="six">Tracking Statistics After Each Game</label>
+                                        <div class="content">
+                                            <p>After the completion of each game, the code is revisited.
+                                                This time, when the code is run, the data frames are once again
+                                                created for each team, but now since the final result of the game
+                                                are known, we can see which statistics were important in deciding the
+                                                outcome of the game. Example: if team1 has a higher 3pt shooting percentage
+                                                than team2, and team1 won the game, we can say that 3pt% has a 1-0 win-loss record.
+                                                After doing this for quite a few games and quite a few statistics, we get
+                                                a win percentage for each statistic. The record for these statistics is appended to its own excel sheet
+                                                and whenever a game is complete the code is ran and updates the excel sheet accordingly. These percentages can then be
+                                                multiplied with the performance differences to add more weight to
+                                                the statistics that have more relevance, and less weight to those that are
+                                                not as important. This creates another comparison data frame which is identical to the
+                                                previous one except this one is weighted based on the statistics.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="seven">
+                                        <label for="seven">What Else?</label>
+                                        <div class="content">
+                                            <p>This description covers most of the project, but there are other
+                                                pieces not mentioned. There are individual scripts to scrape the
+                                                web for live/final scores and appended them into the excel sheet. From there
+                                                a seperate script is used to read the final scores from the excel sheet
+                                                and assign a value to the winner and loser. Lastly, another script is used
+                                                to keep track of how well the predictions did, and what games were predicted correctly.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h1>Goals</h1>
+                                <ul class="accordion">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="eight">
+                                        <label for="eight">Primary Objective</label>
+                                        <div class="content">
+                                            <p>The main objective of this project was to identify the most crucial 
+                                                statistics in determining the outcome of a college basketball game. 
+                                                It is an integral part of a larger project aimed at predicting the winner of college 
+                                                basketball games with precision and reliability, and although this project does 
+                                                'predict' winners, it does so in a very simple manner and this is something that can definitely be improved. 
+                                                Although basketball games can be influenced by various uncertainties, achieving a higher accuracy 
+                                                than sportsbooks would mark a significant success. While it is challenging to guarantee absolute 
+                                                certainty in predictions, the goal remains to provide more reliable and accurate predictions.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h1>Issues</h1>
+                                <ul class="accordion">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="nine">
+                                        <label for="nine">Efficiency</label>
+                                        <div class="content">
+                                            <p>Currently, the main issue with this project
+                                                is how long it takes to run the code. For a single
+                                                matchup to be processed, it takes about 15 minutes. During the peak
+                                                of college basketball season there could be more than
+                                                100 different games in a day, which would have a total run time
+                                                of about 25 hours. There's just not enough time in the day for that.
+                                                And if I wanted to wait for the games to finish and update the statistical
+                                                records, I would have to run the code again, which would be another 25 hours.                                    
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h1>Whats Next?</h1>
+                                <ul class="accordion">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="ten">
+                                        <label for="ten">Cleaning Up The Code</label>
+                                        <div class="content">
+                                            <p>This includes making the code more efficient, changing
+                                                variable names to make the code easier to understand, and
+                                                using a more practical method of updating the statistical
+                                                records.                                                                    
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="eleven">
+                                        <label for="eleven">More In-Depth Analysis</label>
+                                        <div class="content">
+                                            <p>In pursuit of more accurate predictions, I aim to delve into advanced analysis techniques,
+                                                including deep learning, neural networks, and publin sentiment analysis.
+                                                These powerful tools hold the potential to enhance the
+                                                precision of the predictions significantly.
+                                                This would be a project in itself, and I am confident
+                                                in my abilites to accomplish this task, but I also
+                                                know that I still have a quite a bit to learn before
+                                                I can effectively implement something like this.                                                                                                      
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="twelve">
+                                        <label for="twelve">Branching Out To Other Leagues</label>
+                                        <div class="content">
+                                            <p>If I am able to predict the outcome of college basketball games
+                                                more accurately than the sportsbooks, I define that as a success.
+                                                If I am able to reach that point, I would love to try and do
+                                                the same thing, but for other leagues, such as the NBA, or a different
+                                                sport like the NFL or NCAAF.                                                                                                                                        
+                                            </p>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                <button class="CloseButton"><i class="fa-regular fa-circle-xmark"></i></button>
+                            </dialog>
+                   
+
+                        
+
+                        <img 
+                        class="accordion-image" 
+                        src="images/OSUBasketball.jpg" 
+                        alt="NCAA College Basketball"
+                        />
+                    
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-panel">
+                        <h2 id="panel2-heading">
+                            <button
+                            class="accordion-trigger"
+                            aria-controls="panel2-content"
+                            aria-expanded="false"
+                            >
+                                <span class="accordion-title" id="panel2-title">This Website</span>
+                                <svg aria-hidden="true" class="accordion-icon">
+                                    <use xlink:href="#website2"></use>
+                                </svg>
+                            </button>
+                        </h2>
+
+                        <div 
+
+                        class="accordion-content" 
+                        id="panel2-content"
+                        aria-labelledby="panel2-heading"
+                        aria-hidden='true'
+                        role="region"
+                        >
+
+                        <div class="accordion-labels">
+                            <h3 class="label1" id="label">HTML</h3>
+                            <h3 class="label2" id="label">CSS</h3>
+                            <h3 class="label3" id="label">Javascript</h3>
+                            <h3 class="label4" id="label">PHP</h3>
+                            <h3 class="label5" id="label">Web Design and Development</h3>
+                            <h3 class="label6" id="label">Work-In Progress</h3>
+                        </div>
+
+                        
+                            <button class="MoreInfoButton"><h3>More Info</h3></button>
+                            <dialog class="MoreInfo">
+                                <h1>Description</h1>
+                                <ul class="Modal">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="thirteen">
+                                        <label for="thirteen">Creation</label>
+                                        <div class="content">
+                                            <p>This marks my initial venture into the world of front-end work. Before embarking on this website, I was pretty clueless about HTML, CSS, and JavaScript. But with some determined learning and help from sources like Google, YouTube, and ChatGPT, I managed to pick up quite a bit.
+
+                                                Creating this website has been a pretty cool journey. Not only did I learn new skills, but I also got to put them into action by making something for myself. It's been a neat experience, and I'm excited to keep working on this project in the future.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h1>Goals</h1>
+                                <ul class="Modal">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="fourteen">
+                                        <label for="fourteen">Primary Objective</label>
+                                        <div class="content">
+                                            <p>
+                                                My main purpose for creating this website was to 
+                                                learn more about front-end development and acquire
+                                                new skills. I also wanted to create a virtual space
+                                                that anyone can visit to learn more about me, and view
+                                                some of my projects.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h1>Whats Next?</h1>
+                                <ul class="Modal">
+                                    <li>
+                                        <input type="checkbox" name="accordion" id="fifteen">
+                                        <label for="fifteen">Improvements</label>
+                                        <div class="content">
+                                            <p>
+                                                I find myself mostly content with the current state of my website. However, I am also cognizant of its potential for refinement. This extends to aspects like design enhancements and the optimization of code structure. Moving forward, I am committed to a continual process of nurturing the website. As time progresses and circumstances dictate, I am dedicated to effecting necessary modifications and additions, ensuring the website remains current and polished.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="CloseButton"><i class="fa-regular fa-circle-xmark"></i></button>
+                            </dialog>
+                            
+                        
+
+
+                        <img 
+                        class="accordion-image" 
+                        src="images/webdev3.svg" 
+                        alt="Web Design"
+                        />
+                    
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-panel">
+                        <h2 id="panel3-heading">
+                            <button
+                            class="accordion-trigger"
+                            aria-controls="panel3-content"
+                            aria-expanded="false"
+                            >
+                                <span class="accordion-title" id="panel3-title">App</span>
+                                <svg aria-hidden="true" class="accordion-icon">
+                                    <use xlink:href="#app-design"></use>
+                                </svg>
+                            </button>
+                        </h2>
+
+                        <div 
+
+                        class="accordion-content" 
+                        id="panel3-content"
+                        aria-labelledby="panel3-heading"
+                        aria-hidden='true'
+                        role="region"
+                        >
+
+                        <div class="accordion-labels">
+                            <h3 class="label2" id="label">App Design and Development</h3>
+                            <h3 class="label3" id="label">Not Started Yet</h3>
+                        </div>
+
+
+                        <button class="MoreInfoButton"><h3>More Info</h3></button>
+                        <dialog class="MoreInfo">
+                            <h1>Description</h1>
+                            <ul class="Modal">
+                                <li>
+                                    <input type="checkbox" name="accordion" id="sixteen">
+                                    <label for="sixteen">Creation</label>
+                                    <div class="content">
+                                        <p>This project has not yet been started, but I hope
+                                            to create some sort of app in the near future
+                                            that can incorporate all of my
+                                            front-end and back-end skills.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="CloseButton"><i class="fa-regular fa-circle-xmark"></i></button>
+                        </dialog>
+
+                        <img 
+                        class="accordion-image" 
+                        src="images/app-design.jpeg" 
+                        alt="App Design"
+                        />
+                    
+                        </div>
+
+                    </div>
+
+                    <div class="accordion-panel">
+                        <h2 id="panel4-heading">
+                            <button
+                            class="accordion-trigger"
+                            aria-controls="panel4-content"
+                            aria-expanded="false"
+                            >
+                                <span class="accordion-title" id="panel4-title"></span>
+                                <svg aria-hidden="true" class="accordion-icon">
+                                    <use xlink:href="#question-mark"></use>
+                                </svg>
+                            </button>
+                        </h2>
+
+                        <div 
+
+                        class="accordion-content" 
+                        id="panel4-content"
+                        aria-labelledby="panel4-heading"
+                        aria-hidden='true'
+                        role="region"
+                        >
+
+                        <p>
+                            
+                            This isn't a project, but I thought the page
+                            looked better with 4 panels instead of 3.
+                            
+
+                        </p>
+
+                        <button class="MoreInfoButton"><h3>Press For A Joke</h3></button>
+                        <dialog class="MoreInfo">
+                            <h1>Jokes</h1>
+                            <ul class="Modal">
+                                <li>
+                                    <input type="checkbox" name="accordion" id="seventeen">
+                                    <label for="seventeen">Why did the chicken cross the road?</label>
+                                    <div class="content">
+                                        <p>In the desolate tapestry of existence, where the strands of reality are woven with both the ordinary and the enigmatic, we find the poignant saga of the chicken who dared to cross the road. The road, you see, was not merely an asphalt expanse but a metaphorical threshold that demarcated the boundaries of its own perception.
+
+                                            The chicken, burdened by the weight of its feathers and the scars of its past, embarked on a journey that mirrored the human quest for meaning. The road represented the existential void that separates birth from death, ignorance from enlightenment. With each step it took, the chicken confronted the abyss of its own mortality, teetering on the edge of its feathered fragility. The road was not just a physical obstacle, but a psychological battleground where it grappled with its fears, uncertainties, and the haunting question: "Why?"
+                                            
+                                            In its somber eyes, we glimpse the reflections of our own quandaries. The road became an allegory for our own hesitations in the face of life's myriad choices and unanswerable riddles. The chicken's journey, while seemingly mundane, transcends the mundane, mirroring the very essence of human existence.
+                                            
+                                            As the chicken crossed from one side to the other, it was akin to crossing the tides of time, traversing the fleeting moments that constitute our reality. Its journey encapsulated the dichotomy of life: joy and sorrow, hope and despair, the known and the unknown. Its passage evoked empathy, forcing us to confront the abyss within ourselves.
+                                            
+                                            And so, we are left to ponder, why did the chicken cross the road? Was it a quest for sustenance, a longing for greener pastures, or an insatiable curiosity? Or could it be that the chicken's odyssey mirrors our own ceaseless search for purpose amidst the cosmic expanse? The road becomes not just a physical divide, but a metaphor for the infinite chasm of existence itself.
+                                            
+                                            In the end, the chicken's journey speaks to our shared humanity—the yearning to transcend our limitations, to bridge the gaps that separate us from the unfathomable truths that lie beyond. It reminds us that while our journeys may be solitary, they are also universally connected by the threads of uncertainty and the unrelenting pursuit of significance. Just as the chicken crossed the road, we too press forward, step by step, in pursuit of meaning amid the boundless enigma of life.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="CloseButton"><i class="fa-regular fa-circle-xmark"></i></button>
+                        </dialog>
+
+                        <img 
+                        class="accordion-image" 
+                        src="images/optill.jpeg" 
+                        alt="NCAA College Basketball"
+                        />
+                    
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<svg width="0" height="0" class="hidden">
+    <symbol fill="white" version="1.1" id="question-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 512 512">
+        <path d="M396.138,85.295c-13.172-25.037-33.795-45.898-59.342-61.03C311.26,9.2,280.435,0.001,246.98,0.001
+          c-41.238-0.102-75.5,10.642-101.359,25.521c-25.962,14.826-37.156,32.088-37.156,32.088c-4.363,3.786-6.824,9.294-6.721,15.056
+          c0.118,5.77,2.775,11.186,7.273,14.784l35.933,28.78c7.324,5.864,17.806,5.644,24.875-0.518c0,0,4.414-7.978,18.247-15.88
+          c13.91-7.85,31.945-14.173,58.908-14.258c23.517-0.051,44.022,8.725,58.016,20.717c6.952,5.941,12.145,12.594,15.328,18.68
+          c3.208,6.136,4.379,11.5,4.363,15.574c-0.068,13.766-2.742,22.77-6.603,30.442c-2.945,5.729-6.789,10.813-11.738,15.744
+          c-7.384,7.384-17.398,14.207-28.634,20.479c-11.245,6.348-23.365,11.932-35.612,18.68c-13.978,7.74-28.77,18.858-39.701,35.544
+          c-5.449,8.249-9.71,17.686-12.416,27.641c-2.742,9.964-3.98,20.412-3.98,31.071c0,11.372,0,20.708,0,20.708
+          c0,10.719,8.69,19.41,19.41,19.41h46.762c10.719,0,19.41-8.691,19.41-19.41c0,0,0-9.336,0-20.708c0-4.107,0.467-6.755,0.917-8.436
+          c0.773-2.512,1.206-3.14,2.47-4.668c1.29-1.452,3.895-3.674,8.698-6.331c7.019-3.946,18.298-9.276,31.07-16.176
+          c19.121-10.456,42.367-24.646,61.972-48.062c9.752-11.686,18.374-25.758,24.323-41.968c6.001-16.21,9.242-34.431,9.226-53.96
+          C410.243,120.761,404.879,101.971,396.138,85.295z"></path>
+        <path d="M228.809,406.44c-29.152,0-52.788,23.644-52.788,52.788c0,29.136,23.637,52.772,52.788,52.772
+          c29.136,0,52.763-23.636,52.763-52.772C281.572,430.084,257.945,406.44,228.809,406.44z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="-13.5 0 80 80" id="app-design">
+        <g id="App_design" transform="translate(-254.07 -70.142)">
+          <g id="Group_6">
+            <g id="Group_5">
+              <g id="Group_4">
+                <g id="Group_3">
+                  <path id="Path_4" d="M307.07,78.142v64a8.01,8.01,0,0,1-8,8h-37a8.011,8.011,0,0,1-8-8v-64a8.01,8.01,0,0,1,8-8h37A8.009,8.009,0,0,1,307.07,78.142Zm-6,64v-8h-41v8a2.032,2.032,0,0,0,2,2h37A2.026,2.026,0,0,0,301.07,142.142Zm0-14v-50a2.025,2.025,0,0,0-2-2h-37a2.032,2.032,0,0,0-2,2v50Z" fill="#104386"></path>
+                  <path id="Path_5" d="M301.07,78.142v50h-41v-50a2.032,2.032,0,0,1,2-2h37A2.025,2.025,0,0,1,301.07,78.142Zm-4.51,40.5v-34.5a3,3,0,0,0-3-3H267.58a3,3,0,0,0-3,3v34.5a3,3,0,0,0,3,3h25.98A3,3,0,0,0,296.56,118.642Z" fill="#f60"></path>
+                  <path id="Path_6" d="M296.56,84.142v34.5a3,3,0,0,1-3,3H267.58a3,3,0,0,1-3-3v-34.5a3,3,0,0,1,3-3h25.98A3,3,0,0,1,296.56,84.142Zm-6,31.5v-7.09h-7.99v7.09Zm0-13.09V87.142h-7.99v15.41Zm-13.99,13.09v-28.5h-5.99v28.5Z" fill="#104386"></path>
+                  <rect id="Rectangle_3" width="7.99" height="7.089" transform="translate(282.57 108.552)" fill="#ffffff"></rect>
+                  <rect id="Rectangle_4" width="7.99" height="15.411" transform="translate(282.57 87.142)" fill="#69f"></rect>
+                  <path id="Path_7" d="M280.57,136.462a2.84,2.84,0,1,1-2.839,2.84A2.837,2.837,0,0,1,280.57,136.462Z" fill="#104386"></path>
+                  <path id="Path_8" d="M299.07,144.142h-18.5v-2a2.84,2.84,0,0,0,0-5.68v-2.32h20.5v8A2.026,2.026,0,0,1,299.07,144.142Z" fill="#69f"></path>
+                  <path id="Path_9" d="M280.57,144.142h-18.5a2.032,2.032,0,0,1-2-2v-8h20.5v2.32a2.84,2.84,0,0,0,0,5.68Z" fill="#69f"></path>
+                  <rect id="Rectangle_5" width="5.99" height="28.5" transform="translate(270.58 87.142)" fill="#ffffff"></rect>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </symbol>
+    <symbol fill="green" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="website">
+      <path d="M1015.848 687.82H8.156a7.992 7.992 0 0 1-7.998-7.996 7.994 7.994 0 0 1 7.998-7.998h1007.692a7.992 7.992 0 0 1 7.996 7.998 7.992 7.992 0 0 1-7.996 7.996zM512 767.766c-17.636 0-31.99-14.34-31.99-31.99s14.354-31.99 31.99-31.99 31.992 14.34 31.992 31.99-14.356 31.99-31.992 31.99z m0-47.984c-8.826 0-15.996 7.184-15.996 15.994s7.17 15.994 15.996 15.994c8.824 0 15.996-7.184 15.996-15.994s-7.172-15.994-15.996-15.994zM376.136 975.732a8.01 8.01 0 0 1-7.81-9.73l31.99-143.956c0.954-4.296 5.202-6.984 9.544-6.078a8.014 8.014 0 0 1 6.078 9.544l-31.99 143.956a8.004 8.004 0 0 1-7.812 6.264zM647.864 975.732a8 8 0 0 1-7.808-6.264l-31.988-143.956a8.01 8.01 0 0 1 6.074-9.544c4.376-0.906 8.59 1.782 9.542 6.078l31.992 143.956a8.008 8.008 0 0 1-7.812 9.73z" fill=""></path>
+      <path d="M671.954 975.732H352.05a7.992 7.992 0 0 1-7.998-7.998 7.992 7.992 0 0 1 7.998-7.996h319.904a7.992 7.992 0 0 1 7.996 7.996 7.992 7.992 0 0 1-7.996 7.998zM967.86 640.086H56.14a7.994 7.994 0 0 1-7.998-7.998V104.25a7.994 7.994 0 0 1 7.998-7.998h911.72c4.422 0 8 3.578 8 7.998v527.838a7.994 7.994 0 0 1-8 7.998z m-903.722-15.996h895.726V112.248H64.138v511.842z" fill=""></path>
+      <path d="M967.86 800.038H56.14c-30.866 0-55.982-25.118-55.982-55.982V104.25c0-30.866 25.118-55.982 55.982-55.982h911.72c30.868 0 55.984 25.118 55.984 55.982v639.804c0 30.866-25.118 55.984-55.984 55.984zM56.14 64.262c-22.056 0-39.988 17.94-39.988 39.988v639.804c0 22.054 17.932 39.986 39.988 39.986h911.72c22.058 0 39.988-17.932 39.988-39.986V104.25c0-22.048-17.93-39.988-39.988-39.988H56.14z" fill=""></path>
+      <path d="M967.86 831.778H56.14c-31.396 0-55.982-24.586-55.982-55.982v-31.99a7.994 7.994 0 0 1 7.998-7.998 7.994 7.994 0 0 1 7.998 7.998v31.99c0 22.43 17.558 39.986 39.988 39.986h911.72c22.434 0 39.988-17.556 39.988-39.986v-31.74a7.994 7.994 0 0 1 8-7.998 7.992 7.992 0 0 1 7.996 7.998v31.74c-0.002 31.396-24.588 55.982-55.986 55.982zM88.13 640.086a7.994 7.994 0 0 1-7.998-7.998V104.25a7.994 7.994 0 0 1 7.998-7.998 7.994 7.994 0 0 1 7.998 7.998v527.838a7.994 7.994 0 0 1-7.998 7.998z" fill=""></path>
+      <path d="M72.136 160.232H56.14c-4.42 0-7.998-3.576-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998zM72.136 208.218H56.14c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998zM72.136 256.204H56.14c-4.42 0-7.998-3.576-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998zM72.136 304.19H56.14c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998zM72.136 352.174H56.14c-4.42 0-7.998-3.576-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998zM72.136 400.16H56.14a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h15.996a7.994 7.994 0 0 1 7.998 7.998 7.996 7.996 0 0 1-7.998 7.998zM72.136 448.144H56.14a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h15.996a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM72.136 496.13H56.14a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h15.996a7.994 7.994 0 0 1 7.998 7.998 7.996 7.996 0 0 1-7.998 7.998zM72.136 544.116H56.14a7.994 7.994 0 0 1-7.998-7.998 7.992 7.992 0 0 1 7.998-7.996h15.996a7.992 7.992 0 0 1 7.998 7.996 7.994 7.994 0 0 1-7.998 7.998zM72.136 592.102H56.14c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h15.996c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998zM200.096 160.232h-63.98c-4.42 0-7.998-3.576-7.998-7.998s3.576-7.998 7.998-7.998h63.98c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998zM456.016 208.218h-191.94c-4.42 0-7.998-3.578-7.998-7.998s3.576-7.998 7.998-7.998h191.94c4.422 0 7.998 3.578 7.998 7.998s-3.576 7.998-7.998 7.998zM232.086 208.218H152.11c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h79.976c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998zM456.016 256.204h-15.994c-4.42 0-7.998-3.576-7.998-7.998s3.578-7.998 7.998-7.998h15.994c4.422 0 7.998 3.576 7.998 7.998s-3.576 7.998-7.998 7.998zM408.032 256.204H168.106c-4.42 0-7.998-3.576-7.998-7.998s3.576-7.998 7.998-7.998h239.926c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998zM216.09 352.174H168.106c-4.42 0-7.998-3.576-7.998-7.998s3.576-7.998 7.998-7.998h47.986c4.42 0 7.998 3.576 7.998 7.998s-3.58 7.998-8 7.998zM456.016 352.174H248.082c-4.42 0-7.998-3.576-7.998-7.998s3.578-7.998 7.998-7.998h207.936c4.422 0 7.998 3.576 7.998 7.998s-3.578 7.998-8 7.998zM456.016 304.19H184.1c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h271.916c4.422 0 7.998 3.578 7.998 7.998s-3.576 7.998-7.998 7.998zM456.016 400.16h-63.98a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h63.98a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM408.032 448.144H152.11a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h255.922a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM280.072 544.116h-127.96a7.994 7.994 0 0 1-7.998-7.998 7.992 7.992 0 0 1 7.998-7.996h127.96a7.992 7.992 0 0 1 7.998 7.996 7.994 7.994 0 0 1-7.998 7.998zM456.016 496.13h-79.974a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h79.974a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM344.052 496.13H168.106a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h175.946a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM200.096 592.102h-63.98c-4.42 0-7.998-3.578-7.998-7.998s3.576-7.998 7.998-7.998h63.98c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998zM456.016 448.144h-15.994a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h15.994a7.994 7.994 0 0 1 7.998 7.998 7.992 7.992 0 0 1-7.998 7.998zM360.046 400.16h-191.94a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h191.942a7.994 7.994 0 0 1 7.998 7.998 7.996 7.996 0 0 1-8 7.998z" fill=""></path>
+      <path d="M512 640.086a7.994 7.994 0 0 1-7.998-7.998V104.25A7.994 7.994 0 0 1 512 96.252a7.992 7.992 0 0 1 7.996 7.998v527.838a7.992 7.992 0 0 1-7.996 7.998z" fill=""></path>
+      <path d="M903.878 544.116a7.984 7.984 0 0 1-6.7-3.638l-97.27-149.634-97.266 149.634c-2.39 3.732-7.372 4.748-11.058 2.358a8.012 8.012 0 0 1-2.344-11.074l103.968-159.952c2.938-4.544 10.464-4.544 13.402 0l103.968 159.952a8.012 8.012 0 0 1-2.344 11.074c-1.34 0.872-2.856 1.28-4.356 1.28z" fill=""></path>
+      <path d="M631.964 544.116a7.998 7.998 0 0 1-6.656-12.434l63.98-95.876a8 8 0 0 1 13.308 0l31.524 47.25a8 8 0 0 1-2.218 11.09c-3.672 2.42-8.636 1.468-11.09-2.218l-24.868-37.278-57.328 85.904a7.99 7.99 0 0 1-6.652 3.562zM631.964 432.15c-22.058 0-39.988-17.94-39.988-39.988s17.93-39.988 39.988-39.988c22.054 0 39.988 17.94 39.988 39.988 0.002 22.048-17.932 39.988-39.988 39.988z m0-63.98c-13.23 0-23.992 10.762-23.992 23.992s10.762 23.992 23.992 23.992 23.992-10.762 23.992-23.992-10.76-23.992-23.992-23.992z" fill=""></path>
+      <path d="M919.876 544.116H567.984c-4.422 0-8-3.576-8-7.998V328.182a7.994 7.994 0 0 1 8-7.998h351.89a7.992 7.992 0 0 1 7.996 7.998v207.936a7.988 7.988 0 0 1-7.994 7.998z m-343.896-15.994h335.898V336.18H575.98v191.942z" fill=""></path>
+      <path d="M919.876 160.232H567.984c-4.422 0-8-3.576-8-7.998s3.578-7.998 8-7.998h351.89c4.422 0 7.996 3.576 7.996 7.998s-3.574 7.998-7.994 7.998z" fill=""></path>
+      <path d="M919.876 288.194a7.99 7.99 0 0 1-7.996-7.998v-127.96c0-4.42 3.574-7.998 7.996-7.998s7.996 3.576 7.996 7.998v127.96a7.992 7.992 0 0 1-7.996 7.998z" fill=""></path>
+      <path d="M919.876 288.194H567.984c-4.422 0-8-3.576-8-7.998s3.578-7.998 8-7.998h351.89c4.422 0 7.996 3.576 7.996 7.998s-3.574 7.998-7.994 7.998z" fill=""></path>
+      <path d="M871.89 224.212H567.984c-4.422 0-8-3.576-8-7.998s3.578-7.998 8-7.998h303.906c4.418 0 7.996 3.576 7.996 7.998s-3.578 7.998-7.996 7.998z" fill=""></path>
+      <path d="M919.876 592.102H567.984c-4.422 0-8-3.578-8-7.998s3.578-7.998 8-7.998h351.89c4.422 0 7.996 3.578 7.996 7.998s-3.574 7.998-7.994 7.998z" fill=""></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="basketball">
+      <path d="M3.33946 16.9997C6.10089 21.7826 12.2168 23.4214 16.9997 20.66C18.9493 19.5344 20.3765 17.8514 21.1962 15.9286C22.3875 13.1341 22.2958 9.83304 20.66 6.99972C19.0242 4.1664 16.2112 2.43642 13.1955 2.07088C11.1204 1.81935 8.94932 2.21386 6.99972 3.33946C2.21679 6.10089 0.578039 12.2168 3.33946 16.9997Z" stroke="#F88158" stroke-width="1.5"></path>
+      <path d="M16.9498 20.5732C16.9498 20.5732 16.0108 13.982 14.0005 10.5C11.9901 7.01798 7.05029 3.42676 7.05029 3.42676" stroke="#F88158" stroke-width="1.5" stroke-linecap="round"></path>
+      <path d="M21.8638 12.5803C16.4528 11.3933 9.05903 16.348 7.57739 20.8177" stroke="#F88158" stroke-width="1.5" stroke-linecap="round"></path>
+      <path d="M16.4141 3.20884C14.9262 7.6299 7.67443 12.5122 2.28877 11.4515" stroke="#F88158" stroke-width="1.5" stroke-linecap="round"></path>
+    </symbol>
+    <symbol fill="#50e85e" id="website2" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+        <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M418.275,146h-46.667  c-5.365-22.513-12.324-43.213-20.587-61.514c15.786,8.776,30.449,19.797,43.572,32.921C403.463,126.277,411.367,135.854,418.275,146  z M452,256c0,17.108-2.191,33.877-6.414,50h-64.034c1.601-16.172,2.448-32.887,2.448-50s-0.847-33.828-2.448-50h64.034  C449.809,222.123,452,238.892,452,256z M256,452c-5.2,0-21.048-10.221-36.844-41.813c-6.543-13.087-12.158-27.994-16.752-44.187  h107.191c-4.594,16.192-10.208,31.1-16.752,44.187C277.048,441.779,261.2,452,256,452z M190.813,306  c-1.847-16.247-2.813-33.029-2.813-50s0.966-33.753,2.813-50h130.374c1.847,16.247,2.813,33.029,2.813,50s-0.966,33.753-2.813,50  H190.813z M60,256c0-17.108,2.191-33.877,6.414-50h64.034c-1.601,16.172-2.448,32.887-2.448,50s0.847,33.828,2.448,50H66.414  C62.191,289.877,60,273.108,60,256z M256,60c5.2,0,21.048,10.221,36.844,41.813c6.543,13.087,12.158,27.994,16.752,44.187H202.404  c4.594-16.192,10.208-31.1,16.752-44.187C234.952,70.221,250.8,60,256,60z M160.979,84.486c-8.264,18.301-15.222,39-20.587,61.514  H93.725c6.909-10.146,14.812-19.723,23.682-28.593C130.531,104.283,145.193,93.262,160.979,84.486z M93.725,366h46.667  c5.365,22.513,12.324,43.213,20.587,61.514c-15.786-8.776-30.449-19.797-43.572-32.921C108.537,385.723,100.633,376.146,93.725,366z   M351.021,427.514c8.264-18.301,15.222-39,20.587-61.514h46.667c-6.909,10.146-14.812,19.723-23.682,28.593  C381.469,407.717,366.807,418.738,351.021,427.514z"></path>
+    </symbol>
+  </svg>
+
+</body>
+</html>

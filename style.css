@@ -1,16 +1,7 @@
 /* LIKES/DISLIKE BUTTON */
-/* Make Relevent Courses Cooler */
-/* Arrow/Snap to Skills */
-/* Project Page */
-/* Include Transcript */
 /* Some type of background animation??? */
 
-
-/* Software II */
-/* CSE 2321 Foundation I Discrete Structures */
-/* Stat 2450 and 3470 */
-/* ECE 2060 Intro to Digital Logic */
-
+/* add source code and make sure all links work */
 
 * {
     box-sizing: border-box;
@@ -118,7 +109,6 @@
 
 .navbar__item {
     height: 80px;
-
 }
 
 .navbar__links{
@@ -211,9 +201,10 @@
         transition: all 0.6s ease-in-out;
         background: #fff;
     }
+    
     .navbar__item {
         width: 100%;
-
+        margin-top: -20px;
     }
 
     .navbar__links {
@@ -396,6 +387,11 @@
     #navbar__logo {
         left: 0px;
     }
+
+    .main__img--container {
+        transform: translateY(-50px);
+    }
+
 }
 
 @media screen and (max-width: 480px){
@@ -417,9 +413,162 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+    .main__img--container {
+        transform: translateY(-150px);
+    }
+
 }
 
 /* ABOUT ME PAGE (Start) */
+
+.AboutMePage {
+    height: 2000px;
+    padding: 10px;
+    background-color: #141414;
+}
+
+.AboutHeader {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 70px;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.AboutContent {
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section {
+    height: 600px;
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding: 0 20px 0 0;
+}
+
+#section:nth-child(2) {
+    flex-direction: row-reverse;
+    padding: 0 0 0 20px;
+}
+
+
+#sectionContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionContent h1 {
+    margin-bottom: 50px;
+}
+
+#box {
+    height: 100px;
+    width: 300px;
+    background: #141414;
+    border: solid;
+    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.boxcontent {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 0px 10px 5px 0px;
+}
+
+.boximage {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.boxcontent h3 {
+    font-size: 20px;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.boxcontent p {
+    font-size: 10px;
+}
+
+.Img {
+    font-size: 100px;
+}
+
+span {
+    display: none;
+}
+
+.dislikeBox #box {
+    box-shadow: rgba(183, 33, 255, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+
+@media screen and (max-width: 625px) {
+    #section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .Img {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    span {
+        display: contents;
+    }
+
+}
+
+/* ABOUT ME PAGE (End) */
+
+/* EDUCATION PAGE (Start) */
 
 /* THIS IS FOR THE BLUE STUFF IN ALL THE BOXES (Start) */
 .head {
@@ -436,528 +585,87 @@
 }
 /* THIS IS FOR THE BLUE STUFF IN ALL THE BOXES (End) */
 
-.AboutMePage {
-    height: 1500px;
-    background-color: #141414;
-    position: relative;
-}
-
-
-.Header {
-    font-weight: 900;
-    position: absolute;
-    text-align: center;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 89px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-/* LIKES (Start) */
-
-.Likes {
-
-    position: absolute;
-    left: 22.5%;
-    top: 400px;
-    font-weight: 900;
-    font-size: 40px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    display: inline-block;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    overflow: hidden; /* Hide any overflow */
-    width: 97px;
-}
-
-.LikeBox1 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 255px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.LikeBox1 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.LikeBox1 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 40.5%;
-}
-
-.LikeBox2 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 385px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.LikeBox2 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.LikeBox2 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 60.5%;
-}
-
-.LikeBox3 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 515px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.LikeBox3 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 8%;
-}
-
-.LikeBox3 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 40.5%;
-}
-
-/* LIKES (End) */
-
-/* DISLIKES (Start) */
-
-.Dislikes {
-    color: white;
-    position: absolute;
-    right: 22.5%;
-    top: 812.5px;
-    transform: translateX(32.5%);
-    font-weight: 900;
-    font-size: 40px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    width: 144px;
-}
-
-.DislikeBox1 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 662.5px;
-    left: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-
-}
-
-.DislikeBox1 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.DislikeBox1 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 65.5%;
-}
-
-.DislikeBox2 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 792.5px;
-    left: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-
-.DislikeBox2 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.DislikeBox2 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 40.5%;
-}
-
-.DislikeBox3 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 922.5px;
-    left: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-
-.DislikeBox3 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 8%;
-}
-
-.DislikeBox3 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 40.5%;
-}
-
-/* DISLIKES (End) */
-
-/* HOBBIES (Start) */
-
-.Hobbies {
-    color: white;
-    position: absolute;
-    left: 22.5%;
-    top: 1212.5px;
-    transform: translateX(-36.5%);
-    font-weight: 900;
-    font-size: 40px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.HobbieBox1 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1070px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.HobbieBox1 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.HobbieBox1 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 65.5%;
-}
-
-.HobbieBox2 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1200px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.HobbieBox2 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2%;
-}
-
-.HobbieBox2 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 40.5%;
-}
-
-.HobbieBox3 {
-    height: 100px;
-    width: 300px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1330px;
-    right: 16.75%;
-    box-shadow: rgba(183, 33, 255, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-}
-
-.HobbieBox3 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.HobbieBox3 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 62.5%;
-}
-
-.LikeBox1:hover, .LikeBox2:hover, .LikeBox3:hover,
-.DislikeBox1:hover, .DislikeBox2:hover, .DislikeBox3:hover,
-.HobbieBox1:hover, .HobbieBox2:hover, .HobbieBox3:hover {
-    transform: scale(1.1);
-}
-
-/* HOBBIES (End) */
-
-/* MOBILE/ANIMATIONS (Start) */
-
-@media screen and (max-width: 760px) {
-    .Header {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .Likes {
-        left: 15%;
-    }
-
-    .Hobbies {
-        left: 18%;
-    }
-
-    .Dislikes {
-        right: 17.5%;
-    }
-}
-
-@media screen and (max-width: 650px){
-
-    .Likes {
-        left: 50%;
-        transform: translate(-50%, -450%);
-    }
-
-    .DislikeBox1, .DislikeBox2, .DislikeBox3 {
-        margin-top: 50px;
-    }
-
-    .Dislikes {
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%, -330%);
-    }
-
-    .HobbieBox1, .HobbieBox2, .HobbieBox3 {
-        margin-top: 90px;
-    }
-
-    .Hobbies {
-        left: 50%;
-        transform: translate(-50%, -230%);
-    }
-
-    .AboutMePage {
-        height: 1950px;
-    }
-
-    .LikeBox2 {
-        margin-top: 40px;
-    }
-
-    .LikeBox3 {
-        margin-top: 80px;
-    }
-
-    .Dislikes {
-        margin-top: 120px;
-    }
-
-    .DislikeBox1 {
-        margin-top: 187.5px;
-    }
-
-    .DislikeBox2 {
-        margin-top: 227.5px;
-    }
-
-    .DislikeBox3 {
-        margin-top: 267.5px;
-    }
-
-    .Hobbies {
-        margin-top: 260px;
-    }
-
-    .HobbieBox1 {
-        margin-top: 367.5px;
-    }
-
-    .HobbieBox2 {
-        margin-top: 407.5px;
-    }
-
-    .HobbieBox3 {
-        margin-top: 447.5px;
-    }
-
-    .LikeBox1, .LikeBox2, .LikeBox3, 
-    .DislikeBox1, .DislikeBox2, .DislikeBox3,
-    .HobbieBox1, .HobbieBox2, .HobbieBox3 {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .LikeBox1:hover, .LikeBox2:hover, .LikeBox3:hover,
-.DislikeBox1:hover, .DislikeBox2:hover, .DislikeBox3:hover,
-.HobbieBox1:hover, .HobbieBox2:hover, .HobbieBox3:hover {
-    transform: translateX(-50%);
-}
-
-}
-
-/* MOBILE/ANIMATIONS (End) */
-/* ABOUT ME PAGE (End) */
-
-/* EDUCATION PAGE (Start) */
-
 .EducationPage {
-    height: 2220px;
     background-color: #141414;
-    position: relative;
 }
 
-.Header2 {
-    font-weight: 900;
-    position: absolute;
-    text-align: center;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 89px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    width: 112px;
-}
-
-.HSCircle {
-    height: 200px;
-    width: 200px;
-    border: solid;
-    border-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 300px;
-    left: 25%;
+.EducationHeader {
+    font-size: 70px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.SchoolCir {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+#JLogo {
+    height: 100px;
+    width: auto;
+    transform: translateY(-15px);
+}
+
+#OSULogo {
+    height: 115px;
+    width: auto;
+    transform: translateY(-40px);
+}
+
+#circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: visible; /* Enable horizontal scrolling when necessary */
+    display: flex; /* Match the width to the text content */
+    flex-direction: column;
+    align-items: center;
+}
+
+#circle p {
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#circle:nth-child(1) {
     background-color: #113625;
-    border-color: #113625;
-    animation: changeBorderRadiusHS 3s linear infinite alternate;
+    animation: changeBorderRadiusHS 2s infinite alternate linear;
+}
+
+#circle:nth-child(2) {
+    background-color: white;
+    animation: changeBorderRadiusCollege 2s infinite alternate linear;
+}
+
+#circle h1, #circle h2, #circle p {
+    transform: translateY(210px);
+}
+
+#circle h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 1;
 }
 
 .HSCircle h1 {
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: auto; /* Enable horizontal scrolling when necessary */
-    display: inline-block; /* Match the width to the text content */
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 230px;
     background: linear-gradient(to top, #bda16e 0%, #113625 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -966,67 +674,7 @@
     -moz-text-fill-color: transparent;
 }
 
-.HSCircle h2 {
-    position: absolute;
-    top: 208px;
-    left: 25.3%;
-    color: white;
-    font-size: 16px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.HSCircle p {
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: auto; /* Enable horizontal scrolling when necessary */
-    display: inline-block; /* Match the width to the text content */
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 208px;
-}
-
-#JLogo {
-    height: 100px;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-55%);
-}
-
-.ColCircle {
-    height: 200px;
-    width: 200px;
-    border: solid;
-    border-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 300px;
-    right: 25%;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    animation: changeBorderRadiusCollege 3s linear infinite alternate;
-}
-
 .ColCircle h1 {
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: auto; /* Enable horizontal scrolling when necessary */
-    display: inline-block; /* Match the width to the text content */
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 230px;
     background: linear-gradient(to top, red 0%, grey 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1035,265 +683,58 @@
     -moz-text-fill-color: transparent;
 }
 
-.yearOSU {
-    position: absolute;
-    top: 208px;
-    left: 24.5%;
+.RelHeader {
+    text-align: center;
     color: white;
-    font-size: 16px;
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    margin-bottom: 50px;
 }
 
-.major {
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: auto; /* Enable horizontal scrolling when necessary */
-    display: inline-block; /* Match the width to the text content */
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 270px;
-    font-weight: 1;
-    font-size: 15px;
-    color: white;
+.RelCourses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
+    grid-template-rows: repeat(4, auto); /* 2 rows with automatic height */
+    gap: 20px; /* Gap between grid items */
+    justify-items: center;
+    margin-bottom: 100px;
 }
 
-.ColCircle p {
-    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: auto; /* Enable horizontal scrolling when necessary */
-    display: inline-block; /* Match the width to the text content */
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    top: 208px;
-}
-
-#OSULogo {
-    height: 135px;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.Rel {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 700px;
-    color: white;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.CourseBox1 {
+#courseBox {
     height: 150px;
     width: 375px;
     background: #141414;
-    position: absolute;
     border: solid;
-    border-color: grey;
-    top: 800px;
-    left: 16.75%;
-}
-.CourseBox2 {
-    height: 150px;
-    width: 375px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 800px;
-    right: 16.75%;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
 }
 
-.CourseBox3 {
-    height: 150px;
-    width: 375px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1000px;
-    left: 16.75%;
-}
-.CourseBox4 {
-    height: 150px;
-    width: 375px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1000px;
-    right: 16.75%;
-}
-
-.CourseBox5 {
-    height: 150px;
-    width: 375px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1200px;
-    left: 16.75%;
-}
-.CourseBox6 {
-    height: 150px;
-    width: 375px;
-    background: #141414;
-    position: absolute;
-    border: solid;
-    border-color: grey;
-    top: 1200px;
-    right: 16.75%;
-}
-
-.CourseBox1 h2 {
+.boximage {
     color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
 }
 
-.CourseBox1 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 30.5%;
-}
-
-.CourseBox2 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 6.5%;
-}
-
-.CourseBox2 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 46.5%;
-}
-
-.CourseBox3 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 8.5%;
-}
-
-.CourseBox3 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 38.5%;
-}
-
-.CourseBox4 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 8.5%;
-}
-
-.CourseBox4 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 42.5%;
-}
-
-.CourseBox5 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-}
-
-.CourseBox5 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 35.5%;
-}
-
-.CourseBox6 h2 {
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 7.5%;
-}
-
-.CourseBox6 p {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    width: 65%;
-    left: 30%;
-    top: 32.5%;
-}
 
 .SkillsBar {
-    height: 200px;
+    height: auto;
     width: 100%;
-    background-color: #141414;
-    position: absolute;
-    top: 1500px;
     display: flex;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 150px;
 }
 
 .SkillHead {
     color: white;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1500px;
     z-index: 16;
+    text-align: center;
 }
 
 .Skill {
     height: 100px;
-    width: 100px;
+    min-width: 100px;
     border-radius: 50%;
-    background-color: white;
-    transform: translateY(75%);
+    transform: translateY(0);  /* IDK why this needs to be here but it does*/
+    will-change: transform;
 }
 
 .Skill h2 {
@@ -1313,18 +754,21 @@
     color: white;
 }
 
+.Skill img {
+    height: 60px;
+    width: auto;
+    transform: translateY(6.5px);
+}
+
 .AcSocClub {
     height: 200px;
     width: 100%;
     background-color: #141414;
-    position: absolute;
-    top: 1800px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 100px;
 }
 
 .AcSocClub h1 {
@@ -1341,7 +785,6 @@
     height: 100px;
     min-width: 100px;
     border-radius: 50%;
-    background-color: white;
     transform: translateY(75%);
     margin-right: 25%;
     color: green;
@@ -1351,7 +794,6 @@
     height: 100px;
     min-width: 100px;
     border-radius: 50%;
-    background-color: white;
     transform: translateY(75%);
     color: #FFCC00;
 }
@@ -1399,77 +841,69 @@
 
 /* RESUME/SOCIAL BUTTONS (Start) */
 
-.SocialContact {
-    height: 100px;
-    width: 600px;
-    position: absolute;
-    left: 50%;
-    top: 2115px;
-    transform: translateX(-50%);
+.footer {
     display: flex;
-    justify-content: space-between;
-}
-
-.Resume {
-    height: 50px;
-    width: 110px;
-    color: black;
-    background-color: white;
-    font-weight: 900;
-    border: solid;
-    border-radius: 35px;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transform: translateY(50%);
+    gap: 15px;
+    padding: 20px;
 }
 
-.Resume:hover {
-    background-color: #131313;
-    color: white;
-    transition: all 0.6s ease;
-}
-
-.ContactMe {
-    height: 50px;
-    width: 110px;
-    color: black;
-    background-color: white;
-    border: solid;
-    border-radius: 35px;
-    font-weight: 900;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
+.socials {
     display: flex;
-    align-items: center;
+    gap: 15px;
+}
+
+.socialBackground {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
     justify-content: center;
-    transform: translateY(50%);
+    align-items: center;
 }
 
-.ContactMe:hover {
-    background-color: #131313;
-    color: white;
+.socialBackground a {
+    color: black;
+}
+
+.socialBackground:nth-child(1):hover {
+    background-color: #E1306C;
     transition: all 0.6s ease;
 }
 
-.instagram, .linkedin {
-    color: white;
-    font-size: 60px;
-    transform: translateY(16%);
-}
-
-.instagram:hover {
-    color: #E1306C;
+.socialBackground:nth-child(2):hover {
+    background-color: #0072b1;
     transition: all 0.6s ease;
 }
 
-.linkedin:hover {
-    color: #0072b1;
+.socialBackground:nth-child(3):hover {
+    background-color: grey;
     transition: all 0.6s ease;
+}
+
+.navbarFooterLinks:hover, .contactResumeFooterLinks:hover {
+    color: #f77062;
+    transition: all 0.6s ease;
+}
+
+.navFooter {
+    display: flex;
+    gap: 15px;
+}
+
+.navbarFooterLinks {
+    color: grey;
+}
+
+.contactResume {
+    display: flex;
+    gap: 15px;
+}
+
+.contactResumeFooterLinks {
+    color: grey;
 }
 
 /* RESUME/SOCIAL BUTTONS (End) */
@@ -1478,76 +912,16 @@
 
 @media screen and (max-width: 1250px) {
 
-    .EducationPage {
-        height: 2850px;
+    .SchoolCir {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
 
-    .Header2 {
-        top: 13px;
-    }
-
-    .HSCircle {
-        left: 50%;
-        transform: translateX(-50%);
-        top: 200px;
-    }
-    
-    .ColCircle {
-        left: 50%;
-        transform: translateX(-50%);
-        top: 525px;
-    }
-
-    .Rel, .CourseBox1, .CourseBox2, .CourseBox3, 
-    .CourseBox4, .CourseBox5, .CourseBox6, .SkillsBar,
-    .AcSocClub {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .SkillsBar, .AcSocClub {
-        margin-top: 650px;
-    }
-
-    .Rel {
-        margin-top: 185px;
-    }
-
-    .CourseBox1{
-        margin-top: 150px;
-    }
-
-    .CourseBox2 {
-        margin-top: 350px;
-    }
-
-    .CourseBox3 {
-        margin-top: 350px;
-    }
-
-    .CourseBox4 {
-        margin-top: 550px;
-    }
-
-    .CourseBox5 {
-        margin-top: 550px;
-    }
-
-    .CourseBox6 {
-        margin-top: 750px;
-    }
-
-    .SkillHead {
-        color: white;
-        position: absolute;
-        top: 2160px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 16;
-    }
-
-    .SocialContact {
-        top: 2750px;
+    .RelCourses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -1559,67 +933,17 @@
 /* MOBILE RESPONSIVENESS (Start) */
 
 @media screen and (max-width: 650px) {
-    .SkillsBar {
-        height: 200px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 1500px;
-        display: flex;
-        overflow-x: auto;
+
+    .AboutHeader, .EducationHeader {
+        font-size: 50px;
     }
     
-    .Skill {
-        min-width: 100px;
-        height: 100px;
-        background-color: white;
-        border-radius: 50%;
-    }
-
-    .Skill:not(:last-child) {
-        margin-right: 100px; /* Add the desired margin value */
-      }
-    
-    .SkillsBar::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-
-    .SkillHead {
-        color: white;
-        position: absolute;
-        top: 2160px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 16;
-    }
-
-    .Resume, .ContactMe {
-        font-size: 12.5px;
-        height: 40px;
-        width: 100px;
-        transform: translateY(75%);
-    }
-
-    .SocialContact {
-        margin-top: 65px;
-        width: 350px;
-    }
-
-    .instagram, .linkedin {
-        font-size: 40px;
-        transform: translateY(50%);
-    }
-    
-    .SocialContact {
-        top: 2675px;
-        width: 450px;
-    }
 
 
 }
 
 @media screen and (max-width: 480px) {
+
     .HSCircle h1, .ColCircle h1 {
         font-size: 25px;
     }
@@ -1632,10 +956,43 @@
         font-size: 12.5px;
     }
 
-    .SocialContact {
-        width: 375px;
-    }
-    
 }
 
 /* MOBILE RESPONSIVENESS (End) */
+
+/* SKILL BAR */
+
+@media screen and (max-width: 910px) {
+
+    .SkillsBar {
+        height: 150px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        padding-left: 50vw;
+        padding-right: 50vw;
+        scroll-snap-type: x proximity; /* Change snap type to proximity */
+        scroll-padding: 0 22.5vw; /* Add padding to buffer zone */
+        border-radius: 50%;
+    }
+    
+    .Skill {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        scroll-snap-align: center;
+    }
+
+    .SkillHead {
+        margin-bottom: 10px;
+    }
+
+
+    .Skill:not(:last-child) {
+        margin-right: 60px; /* Add the desired margin value */
+      }
+    
+    .SkillsBar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}   
