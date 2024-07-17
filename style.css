@@ -691,8 +691,7 @@ span {
 
 .RelCourses {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
-    grid-template-rows: repeat(4, auto); /* 2 rows with automatic height */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
     gap: 20px; /* Gap between grid items */
     justify-items: center;
     margin-bottom: 100px;
