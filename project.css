@@ -368,7 +368,6 @@ img {
     bottom: 10px;
     left: 10px;
     background-color: #F88158;
-    color: white;
     visibility: hidden;
     opacity: 0;
     transition: visibility 500ms 0ms, opacity 500ms 0ms;
@@ -385,8 +384,11 @@ img {
 
 .accordion-panel:nth-child(4) .MoreInfoButton {
     background-color: black;
-    color: white;
-    font-size: 8px;
+}
+
+.MoreInfoButton i {
+    font-size: 24px; /* Increase icon size */
+    color: white; /* Change icon color */
 }
 
 .accordion-panel:has([aria-expanded="true"]) .MoreInfoButton {
