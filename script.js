@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   learnButton.addEventListener('click', function (event) {
     event.preventDefault();
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById('education');
     const offset = 100; // Adjust this value to set the desired offset
     const top = aboutSection.getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({ top, behavior: 'smooth' });
