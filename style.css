@@ -666,7 +666,7 @@ span {
 }
 
 .HSCircle h1 {
-    background: linear-gradient(to top, #bda16e 0%, #113625 100%);
+    background:#bda16e;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -675,7 +675,7 @@ span {
 }
 
 .ColCircle h1 {
-    background: linear-gradient(to top, red 0%, grey 100%);
+    background: #ba0c2f;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -691,7 +691,8 @@ span {
 
 .RelCourses {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
+    grid-template-rows: repeat(4, auto); /* 2 rows with automatic height */
     gap: 20px; /* Gap between grid items */
     justify-items: center;
     margin-bottom: 100px;
